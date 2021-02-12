@@ -1,0 +1,60 @@
+<div class="pb-3 col-12 sidenav text-white">
+      <h6 class="text-justify pt-4 mb-5">
+        Centre auto ccass est une plateforme mettant en relation
+        professionnels et particuliers pour l'achat de véhicules haut de
+        gamme en occasion.
+      </h6>
+      <hr />
+
+      <select (change)="onChangeBrand($event)" class="custom-select mb-5 col-md-12">
+        <option selected >Choisir une marque...</option>
+        <option *ngFor="let brand of brands, index as i" value="{{ i }}">{{ brand.name }}</option>
+      </select>
+
+      <select class="custom-select col-md-12 mb-5">
+        <option selected>Choisir un modèle...</option>
+        <option *ngFor="let model of models" value="{{ model.id }}">{{ model.name }}</option>
+      </select>
+
+      <select class="custom-select mb-5" id="inputGroupSelect03">
+        <option selected>Type de carburant</option>
+        <option value="1">Essence</option>
+        <option value="2">Diesel</option>
+        <option value="3">Hybride</option>
+      </select>
+
+      <select class="custom-select mb-5" id="inputGroupSelect04">
+        <option selected>Année de mise en circulation</option>
+        <option value="1">1980-1990</option>
+        <option value="2">1990-2000</option>
+        <option value="3">2000-2010</option>
+        <option value="3">2010-2020</option>
+      </select>
+
+      <select class="custom-select mb-5" id="inputGroupSelect05">
+        <option selected>Nombre de kilomètres</option>
+        <option value="1">Entre 0 et 50 000km</option>
+        <option value="2">Entre 50 000 et 100 000km</option>
+        <option value="3">Entre 100 000 et 150 000km</option>
+        <option value="3">Plus de 150 000km</option>
+      </select>
+
+      <select class="custom-select mb-5" id="inputGroupSelect05">
+        <option selected>Fourchette de prix</option>
+        <option value="1">Entre 0 et 50 000€</option>
+        <option value="2">Entre 50 000 et 100 000€</option>
+        <option value="3">Entre 100 000 et 150 000€</option>
+        <option value="3">Plus de 150 000€</option>
+      </select>
+      <button type="button" class="mt-1 pull-right btn btn-light">
+        Valider
+      </button>
+      <hr />
+      <p class="text-justify mt-5">
+        Lorem ipsum dolor sit afhtr eleniti voluptatum dolorum animi amet
+        consectetur adipisicing elit. Deleniti enim animi autem at
+        officiis laudantium, quo nulla, quas quasi velit impedit eos a
+        ipsam non inventore voluptatum dolorum modi. officiis laudantium, quo nulla, quas quasi velit impedit eos a
+        ipsam non inventore voluptatum dolorum modi.
+      </p>
+    </div>

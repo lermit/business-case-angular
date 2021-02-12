@@ -1,0 +1,14 @@
+/*******************
+FOOTER
+********************/
+
+footer {
+    background-color: black;
+    padding: 20px 0 10px;
+    color: white;
+  }
+  
+  footer aside p {
+    display: inline-block;
+    margin-left: 75px;
+  }

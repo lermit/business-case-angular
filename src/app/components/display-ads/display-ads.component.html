@@ -1,0 +1,32 @@
+<div class="col-12" id="annonces">
+    <ul class="row">
+
+      <li *ngFor="let ad of ads" class="align-items-start col-lg-12 d-flex mt-4 mb-4 flex-md-column flex-lg-row">
+        <img routerLink="/ad/{{ad.id}}" src="../../../assets/{{ ad.photos[0].exemple }}"/>
+        <div>
+          <h4 class="mt-3 mb-2 text-primary" routerLink="/ad/{{ad.id}}">{{ ad.title }}</h4>
+          <p>
+            {{ ad.description }}
+          </p>
+          <h6>
+            {{ ad.year | date: 'yyyy' }} | {{ ad.mileage }}km | {{ ad.energy.type }} <br />
+            Reférence dossier: {{ ad.reference }}
+          </h6>
+          <div class="font-weight-bold text-right mt-2" id="price">
+            {{ ad.price }}€
+          </div>
+        </div>
+      </li>
+      <hr />
+    </ul>
+
+    <nav>
+      <ul class="pagination ml-5 mb-3">
+        <li *ngFor="let pageNb of pagesNb"
+        (click)="onClickPagination(pageNb)" [ngClass]="{'active': pageNb === currentPageNb}">
+          <a class="page-link">{{ pageNb }}</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>

@@ -1,0 +1,41 @@
+/*******************
+HEADER
+********************/
+header {
+    background-image: url(../../../assets/header.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 15px);
+    transform: rotate(45deg);
+  }
+  
+  header nav img {
+    height: 50px;
+  }
+  
+  header nav ul {
+    font-size: 13px;
+  }
+  
+  header div.title {
+    padding: 120px 0 130px;
+  }
+  
+  header h1 {
+    font-weight: 900;
+    font-size: 35px;
+  }
+  
+  header h2 {
+    font-size: 15px;
+    margin: 20px 0 30px;
+  }

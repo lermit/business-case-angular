@@ -1,0 +1,47 @@
+<div class="container top">
+  <h1 class="mt-5">{{ ad.title }}</h1>
+  <div class="row">
+    <img class="mt-4 mb-5" src="../../../assets/{{ ad.photos[0].exemple }}" />
+    <p class="details mt-4">
+      Prix: {{ ad.price }}€<br />
+      Marque: <br />
+      Modèle: {{ ad.model.name }}<br />
+      Année: {{ ad.year | date: "yyyy" }}<br />
+      Carburant: {{ ad.energy.type }}<br />
+      Km: {{ ad.mileage }}km<br />
+      Référence: {{ ad.reference }}
+      <button class="d-flex mt-4">NOUS CONTACTER</button>
+    </p>
+  </div>
+
+  <h3 class="mt-5 text-center subtitle">Spécifications du véhicule</h3>
+<div class="row specifications">
+  <p class="ml-3 mt-5">
+      Numéro de série: {{ ad.serialNumber }}<br />
+      Catégorie: {{ ad.category }}<br />
+      Nombre de places: {{ ad.seatingCapacity }}<br />
+      Nombre de portes: {{ ad.doorsNumber }}  </p>
+      <p class="d-flex justify-content-between ml-2 mt-5">
+      Couleur: {{ ad.color }}<br />
+      Tapisserie: {{ ad.tapestry }}<br />
+      Propriétaire(s) précédent(s): {{ ad.previousOwner }}<br />
+      Climatisation: {{ ad.hasCooling }}
+  </p></div>
+
+  <h3 class="mt-5 text-center subtitle">Description du véhicule</h3>
+
+  <p class="description mt-5 mb-5">
+    Marque: <br />
+    Modèle: {{ ad.model.name }}<br />
+    Boite de vitesse: {{ ad.hasAutomaticGearbox }}<br />
+    Mise en circulation: {{ ad.year | date: "yyyy" }}<br />
+    Émission CO2: {{ ad.CO2emission }}g/km<br />
+    Puissance: {{ ad.horsepower }} chevaux<br />
+  </p>
+
+<p class="mb-5">Le prix inclut les éléments suivants: 
+- Passage au contrôle technique (pour les véhicules de plus de 4 ans), l'entretien selon les préconisations fournies par le constructeur, 
+une garantie de 12 mois (extensible) et les démarches d'immatriculation. Sans frais supplémentaires.
+</p>
+
+</div>

@@ -1,0 +1,19 @@
+#annonces h3 {
+    margin-top: 20px;
+  
+  }
+  
+  #annonces img {
+    min-width: 305px;
+    height: 190px;
+    margin-right: 30px;
+    margin-top: 20px;
+    border: solid 2px white;
+    box-shadow: 1px 1px 3px black;
+    position: sticky;
+  }
+  
+  #price {
+    font-size: large;
+    margin-right: 5px;
+  }

@@ -1,0 +1,33 @@
+.top {
+    border-top: solid 15px yellow;
+}
+
+.top img {
+    display: block;
+    margin-left: 0;
+    margin-right: 50px;
+    border: solid 2px white;
+    box-shadow: 1px 1px 3px black;
+    width: 550px;
+    height: 350px;
+}
+
+.details {
+    font-size:x-large;
+    margin-left: 40px;
+}
+
+.subtitle {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+.specifications {
+    font-size: large;
+}
+
+.description {
+    font-size: large;
+}
